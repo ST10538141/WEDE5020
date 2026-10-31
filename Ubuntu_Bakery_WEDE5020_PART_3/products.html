@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Ubuntu Bakery products including fresh bread, cupcakes and customised cakes. Search and filter our illustrative product range.">
+  <meta name="robots" content="index, follow">
+  <title>Bakery Products | Ubuntu Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header><div class="navbar"><a class="logo" href="index.html">Ubuntu Bakery</a><nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html" aria-current="page">Products</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+  <main id="main-content"><h1 class="page-heading">Our Products</h1>
+<p>Explore some products available from Ubuntu Bakery. Prices are indicative for this academic project and can be updated as the business develops.</p>
+<div class="product-tools"><label for="productSearch">Search products</label><input id="productSearch" type="search" placeholder="Search bread, cake..." aria-label="Search products"><label for="categoryFilter">Filter by category</label><select id="categoryFilter"><option value="all">All products</option><option value="bread">Bread</option><option value="cupcakes">Cupcakes</option><option value="cakes">Cakes</option></select><label for="sortProducts">Sort products</label><select id="sortProducts"><option value="default">Featured order</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+<p id="productCount" class="notice" aria-live="polite">Showing 3 products</p>
+<div class="grid product-grid" id="productGrid">
+<article class="card product-card" data-category="bread" data-price="18"><button class="gallery-image" type="button" aria-label="Enlarge fresh bread image"><img src="assets/bread-600.png" srcset="assets/bread-600.png 600w, assets/bread-1200.png 1200w" sizes="(max-width: 40rem) 100vw, 33vw" alt="Illustration of a fresh loaf of bread" loading="lazy" width="600" height="600"></button><h2>Fresh Bread</h2><p>Soft, freshly baked bread suitable for breakfast, lunch or family meals.</p><p class="product-price" data-price-text="18"><strong>From R18</strong></p><a class="button" href="enquiry.html?product=Fresh%20Bread">Enquire</a></article>
+<article class="card product-card" data-category="cupcakes" data-price="12"><button class="gallery-image" type="button" aria-label="Enlarge cupcakes image"><img src="assets/cupcakes-600.png" srcset="assets/cupcakes-600.png 600w, assets/cupcakes-1200.png 1200w" sizes="(max-width: 40rem) 100vw, 33vw" alt="Illustration of decorated cupcakes" loading="lazy" width="600" height="600"></button><h2>Cupcakes</h2><p>Decorated cupcakes for parties, school events and everyday treats.</p><p class="product-price"><strong>From R12 each</strong></p><a class="button" href="enquiry.html?product=Cupcakes">Enquire</a></article>
+<article class="card product-card" data-category="cakes" data-price="350"><button class="gallery-image" type="button" aria-label="Enlarge celebration cake image"><img src="assets/cake-600.png" srcset="assets/cake-600.png 600w, assets/cake-1200.png 1200w" sizes="(max-width: 40rem) 100vw, 33vw" alt="Illustration of a celebration cake" loading="lazy" width="600" height="600"></button><h2>Custom Cakes</h2><p>Customised cakes for birthdays and special occasions. Contact us to discuss your design.</p><p class="product-price"><strong>From R350</strong></p><a class="button" href="enquiry.html?product=Custom%20Cakes">Enquire</a></article>
+</div>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged product image"><button type="button" class="lightbox-close" aria-label="Close enlarged image">&times;</button><img src="" alt=""></div></main>
+  <footer><p>&copy; 2026 Ubuntu Bakery. Fictional project for WEDE5020.</p><p>Fresh baking with a local touch in Limpopo, South Africa.</p><p><a href="contact.html">Contact us</a> | <a href="enquiry.html">Make an enquiry</a></p></footer>
+</body></html>
