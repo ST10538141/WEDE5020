@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Ubuntu Bakery with a general message, question or feedback. Fictional bakery project based in Limpopo, South Africa.">
+  <meta name="robots" content="index, follow">
+  <title>Contact Ubuntu Bakery | Contact Form and Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header><div class="navbar"><a class="logo" href="index.html">Ubuntu Bakery</a><nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav></div></header>
+  <main id="main-content"><h1 class="page-heading">Contact Ubuntu Bakery</h1>
+<div class="grid contact-grid"><section class="card contact-details"><h2>Contact Details</h2><p><strong>Phone:</strong> 012 345 6789</p><p><strong>Email:</strong> info@ubuntubakery.example</p><p><strong>Location:</strong> Limpopo, South Africa</p></section><section class="card business-hours"><h2>Business Hours</h2><p>Monday - Friday: 07:00 - 17:00</p><p>Saturday: 08:00 - 14:00</p><p>Sunday: Closed</p></section><section class="card social-media"><h2>Social Media</h2><p>Social media links can be added when the organisation creates its official accounts.</p></section></div>
+<section class="content-section map-section"><h2>Our Region</h2><p>This illustrative map shows the Limpopo region only. Ubuntu Bakery is a fictional project and no exact shop address is provided.</p><div id="bakeryMap" class="map" role="application" aria-label="Interactive map showing the Limpopo region"></div><p class="small-note">Map tiles © OpenStreetMap contributors. Internet access is required to load the map.</p></section>
+<section class="content-section form-card"><h2>Send a Message</h2><p>Complete the form to prepare an email. Your email application will open so you can review and send it.</p><form id="contactForm" novalidate>
+<label for="contactName">Full Name *</label><input id="contactName" name="name" type="text" autocomplete="name" minlength="2" maxlength="60" required>
+<label for="contactEmail">Email Address *</label><input id="contactEmail" name="email" type="email" autocomplete="email" required>
+<label for="contactPhone">Phone Number</label><input id="contactPhone" name="phone" type="tel" pattern="[0-9+() -]{7,20}" title="Enter a valid phone number">
+<label for="messageType">Message Type *</label><select id="messageType" name="type" required><option value="">Choose a message type</option><option>General question</option><option>Feedback</option><option>Website issue</option><option>Other</option></select>
+<label for="contactMessage">Full Message *</label><textarea id="contactMessage" name="message" minlength="10" maxlength="1000" required placeholder="Write your message (10–1000 characters)"></textarea>
+<button class="button" type="submit">Prepare Email</button><p id="contactFeedback" class="notice" aria-live="polite"></p></form></section></main>
+  <footer><p>&copy; 2026 Ubuntu Bakery. Fictional project for WEDE5020.</p><p>Fresh baking with a local touch in Limpopo, South Africa.</p><p><a href="contact.html">Contact us</a> | <a href="enquiry.html">Make an enquiry</a></p></footer>
+</body></html>

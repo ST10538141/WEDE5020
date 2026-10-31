@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send Ubuntu Bakery an enquiry about fresh bread, cupcakes, custom cakes or bulk orders in Limpopo.">
+  <meta name="robots" content="index, follow">
+  <title>Product Enquiry | Ubuntu Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header><div class="navbar"><a class="logo" href="index.html">Ubuntu Bakery</a><nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="enquiry.html" aria-current="page">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+  <main id="main-content"><h1 class="page-heading">Make an Enquiry</h1><p>Use this form to ask about products, custom cakes or bakery orders. The response shown is an example and does not confirm a real booking.</p>
+<div class="form-card"><form id="enquiryForm" novalidate>
+<label for="enquiryName">Full Name *</label><input id="enquiryName" name="name" type="text" autocomplete="name" minlength="2" maxlength="60" required>
+<label for="enquiryEmail">Email Address *</label><input id="enquiryEmail" name="email" type="email" autocomplete="email" required>
+<label for="enquiryPhone">Phone Number *</label><input id="enquiryPhone" name="phone" type="tel" inputmode="tel" pattern="[0-9+() -]{7,20}" title="Enter 7 to 20 digits or phone characters" required>
+<label for="enquiryType">Enquiry Type *</label><select id="enquiryType" name="type" required><option value="">Select an option</option><option>Product enquiry</option><option>Custom cake</option><option>Bulk order</option><option>Volunteer</option><option>Sponsorship</option><option>General enquiry</option></select>
+<label for="productChoice">Product of interest</label><select id="productChoice" name="product"><option value="Not specified">Select a product</option><option>Fresh Bread</option><option>Cupcakes</option><option>Custom Cakes</option></select>
+<label for="eventDate">Required date (if applicable)</label><input id="eventDate" name="date" type="date">
+<label for="enquiryMessage">Message *</label><textarea id="enquiryMessage" name="message" minlength="10" maxlength="500" required placeholder="Tell us what you need (10–500 characters)"></textarea>
+<button class="button" type="submit">Prepare Enquiry</button><p id="enquiryFeedback" class="notice" aria-live="polite"></p></form></div></main>
+  <footer><p>&copy; 2026 Ubuntu Bakery. Fictional project for WEDE5020.</p><p>Fresh baking with a local touch in Limpopo, South Africa.</p><p><a href="contact.html">Contact us</a> | <a href="enquiry.html">Make an enquiry</a></p></footer>
+</body></html>
